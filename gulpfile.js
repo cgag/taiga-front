@@ -584,7 +584,7 @@ gulp.task("express", function() {
     app.use("/" + version + "/locales", express.static(__dirname + "/dist/" + version + "/locales"));
     app.use("/" + version + "/maps", express.static(__dirname + "/dist/" + version + "/maps"));
     app.use("/plugins", express.static(__dirname + "/dist/plugins"));
-    app.use("/conf.json", express.static(__dirname + "/dist/conf.json"));
+    app.use("/conf.json", express.static(__dirname + "/dist/config/conf.json"));
     app.use(require('connect-livereload')({
         port: 35729
     }));

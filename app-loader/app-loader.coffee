@@ -57,7 +57,7 @@ loadPlugins = (plugins) ->
 
     return Promise.all(promises)
 
-promise = $.getJSON "/conf.json"
+promise = $.getJSON "/config/conf.json"
 promise.done (data) ->
     window.taigaConfig = _.assign({}, window.taigaConfig, data)
 
